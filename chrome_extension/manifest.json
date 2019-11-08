@@ -1,0 +1,21 @@
+{
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "name": "Custom Integration with Amazgin Hiring",
+    "permissions": [
+        "tabs",
+        "http://localhost:8888/*"
+    ],
+    "icons": { 
+        "32": "icons/ah_integration_extension_logo_32.png",
+       "128": "icons/ah_integration_extension_logo_128.png" 
+    },
+    "browser_action": {
+        "default_icon": "icons/ah_integration_extension_logo_32.png"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "minimum_chrome_version":"22.0.0"
+}
